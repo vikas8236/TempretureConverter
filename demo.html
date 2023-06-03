@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Temperature Converter</title>
+        <link rel="stylesheet" href="style2.css">
+        <script src="script2.js"></script>
+       
+   
+    </head>
+    <body id = "container">
+      
+        <header>
+            <nav>
+                <ul class ="navigation">
+                    <li class ="list"><a href="#container">Home</a></li>
+                    <li class ="list"><a href="#">||</a></li>
+                    <li class ="list"><a href="#convert">Convert</a></li>
+                    <li class ="list"><a href="#">||</a></li>
+                    <li class ="list"><a href="#footer">About Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1> Welcome To TemperatureConverter.Com</h1>
+   
+    <div class="converter" id="convert">
+        <div class="input-field">
+            <label>From:</label>
+            <select id="fromScale">
+                <option value="Celsius">Celsius</option>
+                <option value="Fahrenheit">Fahrenheit</option>
+                <option value="Kelvin">Kelvin</option>
+            </select>
+        </div>
+    
+        <div class="input-field">
+            <label>To:</label>
+            <select id="toScale">
+                <option value="Celsius">Celsius</option>
+                <option value="Fahrenheit">Fahrenheit</option>
+                <option value="Kelvin">Kelvin</option>
+            </select>
+        </div>
+    
+        <div class="input-field">
+            <label>Temperature:</label>
+            <input type="number" id="temperature" step="any" placeholder="Enter temperature" required>
+        </div>
+    
+        <button class="button" onclick="convertTemperature()">Convert</button>
+    
+        <div class="result" id="result"></div>
+    </div>
+    
+
+    <footer id="footer">
+        <div class="center">
+          Copyright &copy; www.TempretureConverter.com All rights reserved!
+        </div>
+  
+        <div class ="social">
+          <h3>Follow us on </h3>
+          <img src="/insta.png" alt="Instagram">
+          <img src="/facebook.png" alt="facebook">
+          <img src="/youtube-g8412d3321_1920.png" alt="YouTube">
+
+        </div>
+      </footer>
+    </body>
+</html>
